@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "Get user profile",
+      "method": "GET",
+      "path": "/?userId=1",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "phone": "string",
+        "freeRequestsUsed": "number",
+        "subscriptions": "array",
+        "stats": "object"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

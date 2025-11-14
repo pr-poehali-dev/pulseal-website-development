@@ -1,0 +1,20 @@
+{
+  "tests": [
+    {
+      "name": "Ask AI question",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "userId": 1,
+        "question": "Что такое Python?"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "answer": "string",
+        "tokensUsed": "number",
+        "requestsLeft": "number"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
